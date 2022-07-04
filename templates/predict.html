@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Predict</title>
+{% endblock %}
+
+
+
+{% block body %}
+<br>
+<h2>Predict</h2>
+<hr>
+<br>
+
+<form action="/predict" , method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="long">Longitude</label>
+            <input class="form-control" type="number" , step="0.0001" name="long" id="long" placeholder="Enter Longitude"
+                aria-label="Enter Longitude">
+            <small id="longhelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="latit">Latitude</label>
+            <input class="form-control" type="number" , step="0.0001" name="latit" id="latit"
+                placeholder="Enter Latitude" aria-label="Enter Latitude">
+            <small id="latithelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="med_age">Housing Median Age</label>
+            <input class="form-control" type="number" , step="0.0001" name="med_age" id="med_age"
+                placeholder="Enter Housing Median Age" aria-label="Enter Housing Median Age">
+            <small id="agehelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="total_rooms">Total Rooms</label>
+            <input class="form-control" type="number" , step="0.0001" name="total_rooms" id="total_rooms"
+                placeholder="Enter Total Rooms" aria-label="Enter Housing Total Rooms">
+            <small id="totalhelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="total_bedrooms">Total Bed Rooms</label>
+            <input class="form-control" type="number" , step="0.0001" name="total_bedrooms" id="total_bedrooms"
+                placeholder="Enter Total Bed Rooms" aria-label="Enter Housing Total Bed Rooms">
+            <small id="bedhelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="pop">Population</label>
+            <input class="form-control" type="number" , step="0.0001" name="pop" id="pop" placeholder="Enter Population"
+                aria-label="Enter Population">
+            <small id="pophelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="hold">Household</label>
+            <input class="form-control" type="number" , step="0.0001" name="hold" id="hold" placeholder="Enter Household"
+                aria-label="Enter Household">
+            <small id="holdhelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="income">Median Income</label>
+            <input class="form-control" type="number" , step="0.0001" name="income" id="income"
+                placeholder="Enter Median Income" aria-label="Enter Median Income">
+            <small id="incomehelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+
+            <label for="ocean">Ocean Proximity</label>
+            <select class="form-control" name="ocean" id="ocean" placeholder="Enter Ocean Proximity"
+                aria-label="Enter Ocean Proximity">
+                <option>NEAR BAY</option>
+                <option>INLAND</option>
+                <option>NEAR OCEAN</option>
+                <option>ISLAND</option>
+            </select>
+            <small id="oceanhelp" class="form-text text-muted">This Field is required.</small>
+            <br>
+            <input class="btn btn-success btn-lg btn-block" type="submit" value="Predict">
+            <hr>
+            <h5> House prediction is :    {{ pred_val }}</h5>
+            <hr>
+        </div>
+</form>
+
+{% endblock %}
