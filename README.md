@@ -5,7 +5,7 @@
 ### Mohammed_Agoor Contacts:  [Facebook](https://www.facebook.com/agoormachine/) | [GitHub](https://www.github.com/AGOOR97/) | [LinkedIn](https://www.linkedin.com/in/mlagoor/) | [Youtube](https://www.youtube.com/MohammedAgoor) | [Udemy](https://www.udemy.com/user/mohammed-agoor-2/)   <br />
 
 
-#### [Depolyment Link](https://regr-deploy.herokuapp.com/)
+### [Depolyment Link on Heroku](https://regr-deploy.herokuapp.com/)
 
 ------------------------------
 ![2022-07-04_162314](https://user-images.githubusercontent.com/81787449/177174200-f11415ea-8b50-4749-803d-7a534befb206.png)
